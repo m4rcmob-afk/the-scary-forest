@@ -1,26 +1,28 @@
-# The Scary Forest
+# Portal de juegos · LOS BRAWLHALLAS
 
-Portal oficial y videojuego Web desarrollado por **LOS BRAWLHALLAS**.
+Dos juegos de Unity accesibles desde https://m4rcmob-afk.github.io/the-scary-forest/
+
+## Juegos
+
+- **The Scary Forest**: `TheScaryForest-Juego/index.html`. Endless runner 3D, tres vidas y récord local. Se conservan sus archivos originales.
+- **Maze / 03**: `Pacman-Juego/index.html`. Laberinto 3D inspirado en Pac-Man: 36 puntos, dos enemigos con visión frontal y una salida desbloqueable.
+
+La portada permite abrir cada juego directamente o cargar uno dentro del portal. Al cambiar de juego se descarga el reproductor anterior de la página; la partida en curso termina.
+
+## Controles
+
+The Scary Forest: Espacio / arriba / derecha para saltar; abajo / S para agacharse; P / Esc para pausa; R / Enter al perder.
+
+Maze / 03: flechas para moverse, R para reiniciar, M para silenciar o activar la música. Recoger los 36 puntos y salir por la puerta superior; tocar un enemigo termina la partida.
+
+## Publicación
+
+GitHub Pages publica `main`, carpeta raíz `/`. Mantener `.nojekyll`, `index.html` y las dos carpetas de juego. WebGL requiere HTTP/HTTPS y JavaScript activado. La compilación Maze usa Gzip con descompresión de respaldo para funcionar en GitHub Pages sin cabeceras personalizadas.
+
+Para actualizar Maze desde Unity: **Pac-Man > Compilar juego para GitHub Pages**. El resultado se escribe en `PortalWeb/Pacman-Juego/` dentro del proyecto Unity. Subir los archivos completos de la compilación, no los assets fuente de Unity.
+
+## Equipo
 
 - Marco Arturo Cabrera Escobar
 - Alan Steven Torrez Lopez
 - Jheremy Jhostin Ramirez Arcani
-
-Portal: https://m4rcmob-afk.github.io/the-scary-forest/
-
-La página principal presenta la historia, el personaje, los controles, las reglas, las métricas y el equipo. Desde Jugar ahora se abre la versión de Unity, que también puede ejecutarse dentro del portal.
-
-## Controles
-
-- Espacio / flecha arriba / flecha derecha: saltar.
-- Flecha abajo / S: agacharse.
-- Esc / P: pausa, continuar, reiniciar o volver al inicio.
-- R / Enter: reiniciar tras perder.
-
-Tres vidas, un punto por obstáculo esquivado y récord local. La carrera continúa hasta el tercer choque.
-
-## Publicación
-
-GitHub Pages publica la rama `main`, carpeta raíz `/`. `index.html` es el portal; `TheScaryForest-Juego/index.html` es el juego. Mantener los archivos de `Build/` junto a la versión Web y el archivo `.nojekyll` en la raíz.
-
-Para actualizar el juego, reemplazar los archivos de `TheScaryForest-Juego/` con una nueva compilación Web de Unity y subir un commit. Los controles requieren un teclado; el juego se sirve por HTTP/HTTPS.
